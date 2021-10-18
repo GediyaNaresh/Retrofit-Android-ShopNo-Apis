@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".fragments.BottomSheetFragment">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:background="?attr/selectableItemBackground"
+        android:id="@+id/downarrow"
+        android:src="@drawable/ic_round_keyboard_arrow_down_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/hightolow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/allerta_stencil"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="Price: High - Low"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lowtohigh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/allerta_stencil"
+        android:padding="10dp"
+        android:clickable="true"
+        android:singleLine="true"
+
+        android:text="Price: Low - High"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hightolow"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/newtoold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/allerta_stencil"
+        android:focusable="true"
+        android:clickable="true"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="New to Old"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/lowtohigh"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <TextView
+        android:id="@+id/oldtonew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/allerta_stencil"
+android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="Old to New"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/newtoold"
+        tools:layout_editor_absoluteX="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
